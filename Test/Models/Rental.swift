@@ -10,8 +10,8 @@ import Foundation
 struct Rental: Hashable, Decodable {
     let bookID: UUID
     let userID: String
-    let startDate: Date
-    let endDate: Date
+    let startDate: String
+    let endDate: String
 
     enum CodingKeys: String, CodingKey {
         case userID = "userId"

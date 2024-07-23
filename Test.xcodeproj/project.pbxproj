@@ -17,6 +17,7 @@
 		E06FD9AD2C4F9395003C1918 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD9AC2C4F9395003C1918 /* Book.swift */; };
 		E06FD9AF2C4F93F0003C1918 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD9AE2C4F93F0003C1918 /* Rental.swift */; };
 		E06FD9B12C4F9606003C1918 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD9B02C4F9606003C1918 /* ViewModel.swift */; };
+		E06FD9B52C4FB56F003C1918 /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD9B42C4FB56F003C1918 /* NewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E06FD9AC2C4F9395003C1918 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E06FD9AE2C4F93F0003C1918 /* Rental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
 		E06FD9B02C4F9606003C1918 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E06FD9B42C4FB56F003C1918 /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E06FD9A52C4F8F19003C1918 /* Models */,
 				E06FD9952C4F8EAC003C1918 /* TestApp.swift */,
 				E06FD9972C4F8EAC003C1918 /* ContentView.swift */,
+				E06FD9B42C4FB56F003C1918 /* NewItem.swift */,
 				E06FD99B2C4F8EAD003C1918 /* Assets.xcassets */,
 				E06FD99D2C4F8EAD003C1918 /* Preview Content */,
 			);
@@ -167,6 +170,7 @@
 				E06FD9A72C4F8F71003C1918 /* User.swift in Sources */,
 				E06FD9AD2C4F9395003C1918 /* Book.swift in Sources */,
 				E06FD9AB2C4F9287003C1918 /* FilemakerOData.swift in Sources */,
+				E06FD9B52C4FB56F003C1918 /* NewItem.swift in Sources */,
 				E06FD9982C4F8EAC003C1918 /* ContentView.swift in Sources */,
 				E06FD9AF2C4F93F0003C1918 /* Rental.swift in Sources */,
 				E06FD9B12C4F9606003C1918 /* ViewModel.swift in Sources */,

@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct User: Hashable, Codable {
-    let id: String
-    let name: String
-    let surname: String
-    let date: Date
-    let email: String
-    let phoneNumber: String
+struct User: Hashable, Identifiable, Codable {
+    let id: String?
+    let name: String?
+    let surname: String?
+    let date: String?
+    let email: String?
+    let phoneNumber: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "idCode"
