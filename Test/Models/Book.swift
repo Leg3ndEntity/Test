@@ -8,10 +8,10 @@
 import Foundation
 
 struct Book: Hashable, Identifiable, Decodable {
-    let id: UUID?
-    let name: String?
-    let author: String?
-    let edition: String?
+    let id: UUID
+    let name: String
+    let author: String
+    let edition: String
 
     enum CodingKeys: String, CodingKey {
         case id = "id"

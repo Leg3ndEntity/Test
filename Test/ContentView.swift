@@ -16,12 +16,12 @@ struct ContentView: View {
             List {
                 Section(header: Text("BOOKS")){
                     ForEach(vm.bookList) { book in
-                        Text(book.name!)
+                        Text(book.name)
                     }
                 }
                 Section(header: Text("USERS")){
                     ForEach(vm.userList) { user in
-                        Text(user.name ?? "pollo")
+                        Text(user.name)
                     }.onDelete(perform: { indexSet in
                         Task {
                             for index in indexSet {

@@ -8,10 +8,10 @@
 import Foundation
 
 struct User: Hashable, Identifiable, Codable {
-    let id: String?
-    let name: String?
-    let surname: String?
-    let date: String?
+    let id: String
+    let name: String
+    let surname: String
+    let date: String
     let email: String?
     let phoneNumber: String?
 
