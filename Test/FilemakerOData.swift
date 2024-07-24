@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct FileMakerODataResponse<T: Decodable>: Decodable {
     let value: T
 }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//view that add new user to database
+
 struct NewItem: View {
     @StateObject var vm = ViewModel()
     @Environment(\.dismiss) var dismiss
@@ -39,7 +41,8 @@ struct NewItem: View {
             
             Button{
                 Task{
-                    await vm.addNewTeam(user: User(id: id, name: name, surname: surname, date: date, email: "", phoneNumber: ""))
+                    //function to update new user to database
+                    await vm.addNewUser(user: User(id: id, name: name, surname: surname, date: date, email: "", phoneNumber: ""))
                     await vm.loadBookList()
                     await vm.loadUserList()
                 }

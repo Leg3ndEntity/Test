@@ -8,19 +8,29 @@
 import Foundation
 
 struct DBManager {
+    
+    //adress of the database
     private let baseUrl = URL(string: "https://napoli-2.fm-testing.com/fmi/odata/v4/Test")
+    // username for authentication
     private let username = "admin"
+    //password for authentication
     private let password = "lulu11"
+    
     
     private var basicAuthorizationHeader: String {
         let auth = "\(username):\(password)".data(using: .utf8)?.base64EncodedString() ?? ""
         return "Basic \(auth)"
     }
     
+    
+    //fetch all books from "Books" table on FileMaker server using OData API
+    //Return array of Books
     func fetchBooks() async throws -> [Book] {
+        
         guard let url = baseUrl?.appendingPathComponent("Book") else {
             throw URLError(.badURL)
         }
+        
         var request = URLRequest(url: url)
         request.setValue(basicAuthorizationHeader, forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -35,6 +45,9 @@ struct DBManager {
         return decodedData.value
     }
     
+    
+    //fetch all user from "User" table on FileMaker server using OData API
+    //Return array of User
     func fetchUsers() async throws -> [User] {
         guard let url = baseUrl?.appendingPathComponent("User") else {
             throw URLError(.badURL)
@@ -62,6 +75,8 @@ struct DBManager {
         return decodedData.value
     }
     
+    //Add one user to "User" table on FileMaker server using OData API
+    //Update User table with a new user
     func addUser(user: User) async throws -> User {
         guard let url = baseUrl?.appending(path: "User") else {
             throw URLError(.badURL)
@@ -85,6 +100,8 @@ struct DBManager {
         return decodedData
     }
     
+    //delete one user to "User" table on FileMaker server using OData API
+    //delete one User from User Table
     func deleteUser(user: User) async throws {
         guard let baseUrl = baseUrl else {
             throw URLError(.badURL)
