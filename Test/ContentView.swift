@@ -52,6 +52,15 @@ struct ContentView: View {
                     }
                 }
             }
+            Button{
+                Task {
+                    //function to refresh the view for eventually database change
+                    await vm.loadBookList()
+                    await vm.loadUserList()
+                }
+            }label: {
+                Text("REFRESH")
+            }
         }.sheet(isPresented: $open, content: {
             NewItem(id: "", name: "", surname: "", date: "", bname: "", author: "")
         })
