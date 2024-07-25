@@ -1,4 +1,6 @@
-# Library Database Management App
+<div align="center">
+<img src="Opera_senza_titolo_39.png" alt="Test" width="300">
+</div>
 
 ## Overview
 
