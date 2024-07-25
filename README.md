@@ -1,6 +1,8 @@
 <div align="center">
 <img src="Opera_senza_titolo_39.png" alt="Test" width="300">
+<img src="Opera_senza_titolo_40.png" alt="Test" width="900">
 </div>
+
 
 ## Overview
 
